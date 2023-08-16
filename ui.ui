@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>447</width>
+    <height>557</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:#22222e;
+</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>451</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#fb5b5d;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>261</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white
+</string>
+     </property>
+     <property name="text">
+      <string>КОНВЕРТЕР ВАЛЮТ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>161</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>banknotespaymentmoney_billetesdebanco_pag_3773.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="output_amount">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>410</y>
+      <width>380</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #22222e;
+border: 2px solid #f66867 ;
+border-radius: 30;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>480</y>
+      <width>380</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:white;
+	background-color: #fb5b5d;
+	border-radius: 30;
+}
+QPushButton:pressed{
+	background-color:#fa4244;
+}</string>
+    </property>
+    <property name="text">
+     <string>КОНВЕРТИРУЙ</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="first_box">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>200</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #22222e;
+border: 2px solid #f66867 ;
+color:white;ZAR</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>USD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BGN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CYP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CZK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DKK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EEK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GBP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HUF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LTL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LVL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MTL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PLN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ROL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SEK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SIT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SKK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ISK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NOK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HRK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HKD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IDR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ILS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>INR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KRW</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MXN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MYR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NZD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PHP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZAR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EUR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RUB</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="input_price">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>320</y>
+      <width>380</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #22222e;
+border: 2px solid #f66867 ;
+border-radius: 30;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="second_box">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>260</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #22222e;
+border: 2px solid #f66867 ;
+color:white;ZAR</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>USD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BGN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CYP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CZK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DKK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EEK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GBP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HUF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LTL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LVL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MTL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PLN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ROL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SEK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SIT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SKK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ISK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NOK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HRK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HKD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IDR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ILS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>INR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KRW</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MXN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MYR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NZD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PHP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZAR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EUR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RUB</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
